@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+
+    <script>
+        $(document).on("click", "#ajax-button", function () {
+            $.get("/getData", function (location) {
+                $("#ajax-div").text(location);
+            });
+        });
+    </script>
+</head>
+
+<body>
+
+<form >
+    <input type="text" name = "garagNumb" placeholder="Введите номер гаража"/>
+    <input type="button" id="ajax-button" value="Найти маршрут">
+</form>
+<div id="ajax-div"></div>
+
+</body>
+</html>
