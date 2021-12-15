@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.text.Font?>
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.petrova.FX.PrimaryController"
+            prefHeight="400.0" prefWidth="600.0">
+    <children>
+        <Button layoutX="354.0" layoutY="133.0" mnemonicParsing="false" onAction="#getAnimeCharacter" text="Сгенерировать" />
+        <Text fx:id="text" layoutX="52.0" layoutY="289.0" strokeType="OUTSIDE" strokeWidth="0.0">
+            <font>
+                <Font size="25.0" />
+            </font>
+        </Text>
+        <Text layoutX="171.0" layoutY="71.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Марат - Ваш рандомный персонаж">
+            <font>
+                <Font size="35.0" />
+            </font>
+        </Text>
+    </children>
+</AnchorPane>
